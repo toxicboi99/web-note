@@ -430,3 +430,42 @@ echo "Data saved successfully!";
 - It improves performance and user experience by avoiding full page reloads.
 - It is widely used in modern web applications for dynamic content updates.
 
+## **MySQLi Functions in PHP**
+
+### **1. `mysqli_query()`**
+Executes an SQL query against the database.
+```php
+$result = mysqli_query($conn, "SELECT * FROM users");
+```
+
+### **2. `mysqli_fetch_array()`**
+Fetches a row from the result set as an associative, numeric, or both array.
+```php
+$row = mysqli_fetch_array($result);
+```
+
+### **3. `mysqli_fetch_assoc()`**
+Fetches a row as an associative array.
+```php
+$row = mysqli_fetch_assoc($result);
+```
+
+### **4. `mysqli_fetch_row()`**
+Fetches a row as a numeric array.
+```php
+$row = mysqli_fetch_row($result);
+```
+
+### **5. `mysqli_fetch_object()`**
+Fetches a row as an object.
+```php
+$row = mysqli_fetch_object($result);
+```
+
+### **6. `mysqli_insert_id()`**
+Returns the ID of the last inserted row.
+```php
+$last_id = mysqli_insert_id($conn);
+echo "Last inserted ID: " . $last_id;
+```
+
